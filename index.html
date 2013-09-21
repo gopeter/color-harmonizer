@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta charset="utf-8" />
+
+	<title>Harmonic Colors</title>
+
+	<script src="js/plugins.js" type="text/javascript"></script>
+	<script src="js/lib.js" type="text/javascript"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/jquery.minicolors.css" media="all" />	
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+
+</head>
+<body>
+
+<div class="wrapper">
+	
+	<div class="menu">
+		<a href="#" class="add-field">Add field</a>
+		<a href="#" class="harmonize">Harmonize!</a>
+	</div>
+	
+	<div class="partial">
+		<div class="color-item added">
+
+			Old color
+			<div class="color-preview color-preview-old"></div>
+			
+			New color
+			<div class="color-preview color-preview-new" data-changed="no"></div>			
+			
+			<label>Old hex</label>
+			<input type="text" name="color" class="colorpicker" value="ffffff" />
+			
+			<label>New hex</label>
+			<input type="text" name="color" class="hex-new" value="ffffff" />			
+
+			<a href="#" class="delete-field">Remove</a>
+		</div>
+	</div>
+	
+	<div class="app"></div>
+	
+	<div id="debug"></div>
+	
+</div>
+
+</body>
+</html>
